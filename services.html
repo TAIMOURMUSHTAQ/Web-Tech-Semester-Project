@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+       <div class="logo">
+            <img src="images/logo.png" alt="Taimour Solutions logo">
+            <div>Taimour <span>Solutions</span></div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-banner">
+    <h1>Our Services</h1>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    Modern responsive websites for businesses and startups.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>
+                    Professional branding and creative digital designs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>
+                    SEO, social media management and marketing strategies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Consultancy</h3>
+                <p>
+                    Business growth and career consultancy services.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section project-highlights">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Project Services</h2>
+            <p>The services page also shows how the project supports different needs.</p>
+        </div>
+
+        <div class="project-highlights-grid">
+
+            <div class="project-highlight-card">
+                <h3>Web Design</h3>
+                <p>Responsive layouts that make the project usable on desktop and mobile devices.</p>
+            </div>
+
+            <div class="project-highlight-card">
+                <h3>Branding</h3>
+                <p>Colors, logo placement, and typography work together to form one identity.</p>
+            </div>
+
+            <div class="project-highlight-card">
+                <h3>Support</h3>
+                <p>Simple contact and navigation tools help visitors reach the right page quickly.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-left">
+
+            <iframe
+                src="https://www.google.com/maps?q=Rawalpindi%2C%20Pakistan&output=embed"
+                width="100%"
+                height="250"
+                style="border:0;"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+        <div class="footer-right">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@taimoursolutions.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +92 300 1234567
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Rawalpindi, Pakistan
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Taimour Creative Solutions. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<div class="chatbot-launcher-wrapper">
+    <button
+        type="button"
+        id="chatbot-launcher"
+        class="chatbot-launcher"
+        aria-controls="chatbot-panel"
+        aria-expanded="false"
+    >
+        <i class="fa-solid fa-comments"></i>
+        <span>Chat</span>
+    </button>
+
+    <aside id="chatbot-panel" class="chatbot-panel" aria-hidden="true">
+        <div class="chatbot-panel-header">
+            <div>
+                <h3>Taimour Assistant</h3>
+                <p>Ask about services or prices.</p>
+            </div>
+
+            <button type="button" id="chatbot-close" class="chatbot-close" aria-label="Close chatbot">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div id="chatbot-messages" class="chatbot-messages" aria-live="polite"></div>
+
+        <div class="chatbot-quick-actions">
+            <button type="button" data-message="What services do you offer?">Services</button>
+            <button type="button" data-message="What are your prices?">Prices</button>
+            <button type="button" data-message="Do you help with business consultancy?">Consultancy</button>
+        </div>
+
+        <form id="chatbot-form" class="chatbot-form">
+            <input
+                id="chatbot-input"
+                type="text"
+                placeholder="Type your question..."
+                autocomplete="off"
+                aria-label="Chatbot message"
+            >
+
+            <button type="submit" class="btn chatbot-button">Send</button>
+        </form>
+    </aside>
+</div>
+
+<script src="chatbot-widget.js"></script>
+
+</body>
+</html>
